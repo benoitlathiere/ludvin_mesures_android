@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="none|vertical"
+    android:orientation="vertical"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bornes configurées" />
+
+        <Button
+            android:id="@+id/buttonScanNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bornes alentours" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnVoirMesures"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voir mesures (bug)" />
+
+        <Button
+            android:id="@+id/buttonVideCache"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vider Mesures" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/CBautoscan"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="Autoscan toutes les secondes" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repère : " />
+
+        <EditText
+            android:id="@+id/TxtNomRepere"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="Nom du fichier à créer"
+            android:ems="10"
+            android:inputType="numberDecimal" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnMesuresCSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mesures->csv" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textMesures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <TextView
+            android:id="@+id/textSortie"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="choisir un bouton" />
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/Tableau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </TableLayout>
+
+</LinearLayout>

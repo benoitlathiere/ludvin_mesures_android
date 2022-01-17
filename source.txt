@@ -1,0 +1,6 @@
+Source :
+
+Auteur :Marko Gargenta
+Using WiFi API - Marakana : http://marakana.com/forums/android/examples/40.html
+
+4/1/2013

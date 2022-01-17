@@ -1,0 +1,20 @@
+
+Collections de bornes scannées à stocker :
+
+borne[] :
+- mac
+- ssid
+- hz
+- temps[}
+	- dbm
+	- time
+
+	
+Bornes<borne> :
+nom|MAC|signal|frequence
+
+statsbornesuniques<String,ArrayList<Integer>> :
+MAC1| 54,56,54,23,78,90
+MAC2| 54,56,54,23,78,90
+
+...
